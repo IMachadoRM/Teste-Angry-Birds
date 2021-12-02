@@ -2,7 +2,7 @@ const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
 
-var engine, world;
+var engine, world, plataforma;
 var box1, pig1;
 var backgroundImg;
 
@@ -35,6 +35,8 @@ function setup(){
 
     bird = new Bird(100,100);
 
+    plataforma = new Ground(150,305,300,170);
+
 }
 
 function draw(){
@@ -57,6 +59,9 @@ function draw(){
     box5.display();
     log4.display();
     log5.display();
-
+    plataforma.display();
     bird.display();
 }
+
+
+
